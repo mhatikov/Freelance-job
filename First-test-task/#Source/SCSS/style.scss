@@ -1,0 +1,168 @@
+@import "reset.scss";
+li{
+    list-style: none;
+}
+html{
+    min-width: 320px;
+}
+body{
+    background-color: rgba(197, 194, 194, 0.658);
+}
+
+.task{
+    &__wrapper{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    &__header{
+        border-bottom: black 2px solid;
+    }
+
+}
+.header{
+    &__title{
+        width: auto;
+        display: flex;
+        min-height: 500px;
+    }
+    &__title-photo{
+        width: 300px;
+        height: auto;
+        padding-top: 75px;
+    }
+    &__title-photo-image{
+        width: 100%;
+        height: auto;
+        box-shadow: 7px 12px 10px -6px rgba(34, 60, 80, 0.6);
+    }
+    &__title-content{
+        height: 500px;
+        width: 100%;
+        margin-left: 50px;
+        text-align: center;
+        padding-top: 75px;
+        font-size: 64px;
+        font-family: 'PlayfairDisplay';
+    }
+}
+.content{
+    &__biograpgy{
+        padding-bottom: 10px;
+        border-bottom: 2px solid black;
+    }
+    &__facebook{
+        padding-top: 20px;
+    }
+    &__condition{
+        display: flex;
+        flex-direction: column;
+        min-height: 300px;
+    }
+}
+.condition{
+    &__item{
+        min-height: 20px;
+        font-family: 'Poppins-Italic';
+        font-size: 18px;
+        margin-bottom: 10px;
+        line-height: 120%;
+        &::before{
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        position: relative;
+        bottom: 4px;
+        border-radius: 50%;
+        border: 1px solid rgb(129, 127, 127);
+        content: "";
+        margin-right: 7px;
+        }
+    }
+    &__items-table-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100px 100px;
+        gap: 0px 0px;
+        border: 1px solid #000;
+	    justify-self: center; 
+    }
+    &__item-table{
+        padding-top: 15px;
+        text-align: center;
+        font-size: 24px;
+        font-family: 'Montserrat';
+        border: 1px solid #000;
+    }
+}
+.footer{
+    min-height: 100px;
+    width: 100%;
+    background-color: none;
+    &__content{
+        text-align: center;
+        padding-top: 50px;
+        font-size: 24px;
+    }
+}
+#company{
+    font-family: "Montserrat-Bold";
+}
+h2{
+    margin: 0px 0px 15px 0px;
+    font-size: 36px;
+    font-family: "Montserrat-Bold";
+}
+p{
+    margin: 15px 0px;
+    font-family: 'Poppins-Italic';
+    font-size: 20px;
+}
+a{
+    text-decoration: underline;
+    color: rgb(30, 37, 55);
+    transition: all ease 0.2s;
+    &:hover{
+        text-decoration: none;
+        color: black;
+        font-size: 48px
+    }
+}
+//Fonts
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat'),
+        url(../fonts/Montserrat-ExtraLight.ttf);
+}
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: local('PlayfairDisplay'),
+        url(../fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins-Light.ttf);
+}
+@font-face {
+    font-family: 'Poppins-Italic';
+    src: url(../fonts/Poppins-LightItalic.ttf);
+}
+
+//Technical classes
+.task-container{
+    width: 90%;
+    margin: 50px 5%;
+    background-color: white;
+    -webkit-box-shadow: 7px 12px 10px -6px rgba(34, 60, 80, 0.6);
+    -moz-box-shadow: 7px 12px 10px -6px rgba(34, 60, 80, 0.6);
+    box-shadow: 7px 12px 10px -6px rgba(34, 60, 80, 0.6);
+}
+.task-wrap-content{
+    width: 80%;
+    margin: 15px 10%;
+}
